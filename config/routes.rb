@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'toppages#index'
   
-  
-  
-  get 'favorites/create'
-  get 'favorites/destroy'
-  get 'relationships/create'
-  get 'relationships/destroy'
-  get "/" => "toppages#index"
   
   get "login" => "sessions#new"
   post "login" => "sessions#create"
